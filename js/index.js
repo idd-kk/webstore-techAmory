@@ -166,3 +166,63 @@ const products = [
 
 /************* FUNCTIONS *************/
 
+// Function: getProductAsHtmlString
+// Parameters: product:Object
+// Return: String of HTML (<article>)
+
+function getProductAsHtmlString(product) {
+
+    return `
+    
+    
+    <article class="product ${products.id}">
+
+    <header>
+      <img src="${products.imgOne}">
+    </header>
+
+    <h3>${products.name}</h3>
+    <p>${products.description}</p>
+
+    <fieldset>
+        <legend>Sizes</legend>
+        <ol>
+            <li><label><input type="radio" name="size" value="m"> <span>M</span></label></li>
+            <li><label><input type="radio" name="size" value="l"> <span>L</span></label></li>
+            <li><label><input type="radio" name="size" value="xl"> <span>XL</span></label></li>
+        </ol>
+    </fieldset>
+
+    <form>
+      <fieldset>
+        <legend>Colours</legend>
+        <ul>
+          <li><label><input type="radio" name="colour" value="r"> <span>Red</span></label></li>
+          <li><label><input type="radio" name="colour" value="w"> <span>White</span></label></li>
+          <li><label><input type="radio" name="colour" value="b"> <span>Blue</span></label></li>
+        </ul>
+      </fieldset>
+
+      <form>
+      <fieldset>
+        <legend>Material</legend>
+        <ul>
+          <li><label><input type="radio" name="material" value="f"> <span>felt</span></label></li>
+          <li><label><input type="radio" name="material" value="l"> <span>Leather</span></label></li>
+          <li><label><input type="radio" name="material" value="sc"> <span>SELFCLEAR acrylic fiber </span></label></li>
+        </ul>
+      </fieldset>
+
+      <footer>
+        <data value="39"><del>$50.00</del> <ins>$39.00</ins></data>
+        <button type="button"><span class="material-icons">add_shopping_cart</span> Add to Cart</button>
+        
+        <button type="button"><span class="material-icons">favorite</span></button>
+        <a href="#">see more</a>
+      </footer>
+    </form>
+  </article>
+    
+    
+    `;
+}
