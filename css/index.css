@@ -65,6 +65,40 @@ h4 {
     color: var(--color-text-dark);
 }
 
+button {
+    border: 0.25rem solid var(--color-text-head-light);
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    font-family: var(--font-head);
+    font-weight: 700;
+    background: transparent;
+}
+
+legend {
+    font-family: var(--font-head);
+    font-size: 1em;
+	line-height: 1.75rem;
+    font-weight: 600;
+    color: var(--color-text-dark);
+}
+
+label {
+    font-family: var(--font-body);
+    font-size: 0.8em;
+	line-height: 1.25rem;
+    font-weight: 400;
+    color: var(--color-text-dark);
+}
+
+data {
+    font-family: var(--font-head);
+    font-size: 1.5em;
+	line-height: 1.75rem;
+    font-weight: 700;
+    color: var(--color-text-dark);
+}
+
 .wrapper {
     display: grid;
     grid-template-rows: auto auto auto;

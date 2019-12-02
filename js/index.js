@@ -182,14 +182,15 @@ function getProductAsHtmlString(products) {
 
     <h3>${products.name}</h3>
     <p>${products.description}</p>
+    <a href="#">see more</a>
 
     <fieldset>
         <legend>Sizes</legend>
-        <ol>
-            <li><label><input type="radio" name="size" value="m"> <span>M</span></label></li>
-            <li><label><input type="radio" name="size" value="l"> <span>L</span></label></li>
-            <li><label><input type="radio" name="size" value="xl"> <span>XL</span></label></li>
-        </ol>
+        <ul>
+            <li><label><input type="radio" name="size" value="sm"> <span>S-M</span></label></li>
+            <li><label><input type="radio" name="size" value="ml"> <span>M-L</span></label></li>
+            <li><label><input type="radio" name="size" value="lxl"> <span>L-XL</span></label></li>
+        </ul>
     </fieldset>
 
     <form>
@@ -204,20 +205,19 @@ function getProductAsHtmlString(products) {
 
       <form>
       <fieldset>
-        <legend>Material</legend>
+        <legend>Materials</legend>
         <ul>
-          <li><label><input type="radio" name="material" value="f"> <span>felt</span></label></li>
-          <li><label><input type="radio" name="material" value="l"> <span>Leather</span></label></li>
-          <li><label><input type="radio" name="material" value="sc"> <span>SELFCLEAR acrylic fiber </span></label></li>
+          <li><label><input type="radio" name="materials" value="f"> <span>felt</span></label></li>
+          <li><label><input type="radio" name="materials" value="l"> <span>Leather</span></label></li>
+          <li><label><input type="radio" name="materials" value="sc"> <span>SELFCLEAR acrylic fiber </span></label></li>
         </ul>
       </fieldset>
 
       <footer>
-        <data value="39"><del>$50.00</del> <ins>$39.00</ins></data>
-        <button type="button"><span class="material-icons">add_shopping_cart</span> Add to Cart</button>
+        <data value="39">$ ${products.priceReg}</data>
 
-        <button type="button"><span class="material-icons">favorite</span></button>
-        <a href="#">see more</a>
+        <button type="button" class="button">Add to Cart</button>
+
       </footer>
     </form>
   </article>
