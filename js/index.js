@@ -170,10 +170,9 @@ const products = [
 // Parameters: product:Object
 // Return: String of HTML (<article>)
 
-function getProductAsHtmlString(product) {
+function getProductAsHtmlString(products) {
 
     return `
-    
     
     <article class="product ${products.id}">
 
@@ -216,13 +215,29 @@ function getProductAsHtmlString(product) {
       <footer>
         <data value="39"><del>$50.00</del> <ins>$39.00</ins></data>
         <button type="button"><span class="material-icons">add_shopping_cart</span> Add to Cart</button>
-        
+
         <button type="button"><span class="material-icons">favorite</span></button>
         <a href="#">see more</a>
       </footer>
     </form>
   </article>
     
-    
     `;
 }
+
+function renderProducts(arr) {
+
+// map() Array to a newe Array
+const arrOfHtml = arr.map(getProductAsHtmlString);
+
+// join() Array into a String 
+const strOfHtml = arrOfHtml.join('\n');
+
+// innerHtml String into Elements 
+document.getElementById('products').innerHTML = strOfHtml;
+
+}
+
+/************* EXECUTABLE *************/
+
+renderProducts(products)

@@ -25,6 +25,14 @@ p {
     color: var(--color-text-dark);
 }
 
+a {
+    font-family: var(--font-body);
+    font-size: 0.8em;
+	line-height: 1.25rem;
+    font-weight: 400;
+    color: var(--color-text-head-dark);
+}
+
 h1 {
     font-family: var(--font-head);
     font-size: 3em;
