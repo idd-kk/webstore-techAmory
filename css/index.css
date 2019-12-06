@@ -99,6 +99,24 @@ data {
     color: var(--color-text-dark);
 }
 
+img {
+    max-height: 90vh;
+}
+
+select {
+    margin: 0.5rem;
+    box-sizing: border-box;
+}
+
+option {
+    -webkit-appearance: none; 
+    appearance: none;
+}
+
+.drop-downs {
+    display: flex;
+}
+
 .wrapper {
     display: grid;
     grid-template-rows: auto auto auto;
@@ -164,6 +182,22 @@ data {
     margin: 2rem 0;
 }
 
+.product-price::before {
+    content: "$";
+    color: var(--color-text-dark);
+    font-family: var(--font-head);
+    font-size: 0.5em;
+    vertical-align: top;
+  }
+
+  .product-price::after {
+    content: ".00";
+    color: var(--color-text-dark);
+    font-family: var(--font-head);
+    font-size: 0.5em;
+    vertical-align: center;
+  }
+  
 /* pagination */
 
 .pagination {

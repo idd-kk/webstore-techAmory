@@ -346,7 +346,7 @@ function getProductAsHtmlString(products) {
     <p>${products.description}</p>
 
     <footer>
-      <data value="39">$ ${products.priceReg}</data>
+      <data value="39" class="product-price">${products.priceReg}</data>
 
       <button type="button" class="button">Add to Cart</button>
 
