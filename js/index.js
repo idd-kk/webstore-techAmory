@@ -9,14 +9,14 @@ const products = [
         imgThree: `img/store-pic/neuron-01.png`,
         description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.`,
         priceReg: 1,
-        priceBtc: `API plug-in`,
-        priceSale: 0.5,
+        priceBtc: `API plug-in goes here`,
+        priceSale: null,
         inStock: null,
-        selectOne: null,
-        selectTwo: null,
-        selectThree: null,
-        category: `3D Model`,
-        subCategory: `sew-on`,
+        selectSize: null,
+        selectColor: null,
+        selectMaterial: null,
+        category: `3d`,
+        subCategory: `aplique`
     }, {
         id: `101`,
         name: `Sew-on Neuron Aplique`,
@@ -24,15 +24,15 @@ const products = [
         imgTwo: `img/store-pic/neuron-real.jpg`,
         imgThree: `img/store-pic/neuron-real.jpg`,
         description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.`,
-        priceReg: `getSizeMaterialPrice`,
-        priceBtc: `API plug-in`,
+        priceReg: 30,
+        priceBtc: `API plug-in goes here`,
         priceSale: null,
-        inStock: `getInStockNumber`,
-        selectOne: `size`,
-        selectTwo: `color`,
-        selectThree: `material`,
-        category: `Aplique`,
-        subCategory: `Sew-on`,
+        inStock: null,
+        selectSize: null,
+        selectColor: null,
+        selectMaterial: null,
+        category: `3dprint`,
+        subCategory: `aplique`
     }, {
         id: `102`,
         name: `Side Sling Bag with Induction Charger`,
@@ -41,14 +41,14 @@ const products = [
         imgThree: `img/store-pic/bag-with.png`,
         description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.`,
         priceReg: 300,
-        priceBtc:`API key plug-in`,
+        priceBtc: `API plug-in goes here`,
         priceSale: null,
-        inStock: `getInStockNumber`,
-        selectOne: `size`,
-        selectTwo: `color`,
-        selectThree: `material`,
-        category: `Accessory`, 
-        subCategory: `Bag`,
+        inStock: null,
+        selectSize: null,
+        selectColor: null,
+        selectMaterial: null,
+        category: `accessory`,
+        subCategory: `bag`
     }, {
         id: `103`,
         name: `Side Sling Bag`,
@@ -57,30 +57,30 @@ const products = [
         imgThree: `img/store-pic/bag.png`,
         description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.`,
         priceReg: 200,
-        priceBtc:`API key plug-in`,
+        priceBtc: `API plug-in goes here`,
         priceSale: null,
-        inStock: `getInStockNumber`,
-        selectOne: `Size`,
-        selectTwo: `Color`,
-        selectThree: `material`,
-        category: `Accessory`, 
-        subCategory: `Bag`,
+        inStock: null,
+        selectSize: null,
+        selectColor: null,
+        selectMaterial: null,
+        category: `accessory`, 
+        subCategory: `bag`,
     }, {
         id: `104`,
-        name: `Side Sling Bag Printable Pattern File`,
+        name: `Side Sling Bag with custom aplique`,
         imgOne: `img/store-pic/print-file-bag-01.png`,
         imgTwo: `img/store-pic/print-file-bag-01.png`,
         imgThree: `img/store-pic/print-file-bag-01.png`,
         description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.`,
-        priceReg: 5,
-        priceBtc:`API key plug-in`,
-        priceSale: 2.5,
+        priceReg: 230,
+        priceBtc: `API plug-in goes here`,
+        priceSale: null,
         inStock: null,
-        selectOne: null,
-        selectTwo: null,
-        selectThree: null,
-        category: `Printable Pattern`, 
-        subCategory: `Bag`,
+        selectSize: null,
+        selectColor: null,
+        selectMaterial: null,
+        category: `accessory`, 
+        subCategory: `bag`,
     }, {
         id: `105`,
         name: `Face Mask Maker Kit`,
@@ -88,15 +88,15 @@ const products = [
         imgTwo: `img/store-pic/maker-kit-face-mask-01.png`,
         imgThree: `img/store-pic/maker-kit-face-mask-01.png`,
         description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.`,
-        priceReg: 45,
-        priceBtc:`API key plug-in`,
+        priceReg: 50,
+        priceBtc: `API plug-in goes here`,
         priceSale: null,
-        inStock: `getInStockNumber`,
-        selectOne: `size`,
-        selectTwo: `color`,
-        selectThree: `material`,
-        category: `Maker Kit`, 
-        subCategory: `Face Mask`,
+        inStock: null,
+        selectSize: null,
+        selectColor: null,
+        selectMaterial: null,
+        category: `maker`, 
+        subCategory: `mask`,
     }, {
         id: `106`,
         name: `Face Mask`,
@@ -104,15 +104,15 @@ const products = [
         imgTwo: `img/store-pic/breathing_mask1.68.jpg`,
         imgThree: `img/store-pic/breathing_mask1.jpg`,
         description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.`,
-        priceReg: 250,
-        priceBtc:`API key plug-in`,
+        priceReg: 100,
+        priceBtc: `API plug-in goes here`,
         priceSale: null,
-        inStock: `getInStockNumber`,
-        selectOne: `size`,
-        selectTwo: `color`,
-        selectThree: `material`,
-        category: `Accessory`, 
-        subCategory: `Face Mask`,
+        inStock: null,
+        selectSize: null,
+        selectColor: null,
+        selectMaterial: null,
+        category: `accessory`, 
+        subCategory: `mask`,
     }, {
         id: `107`,
         name: `Face Mask Printable Pattern File`,
@@ -121,14 +121,14 @@ const products = [
         imgThree: `img/store-pic/print-file-face-mask-01.png`,
         description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.`,
         priceReg: 5,
-        priceBtc:`API key plug-in`,
-        priceSale: 2.5,
-        inStock: `getInStockNumber`,
-        selectOne: null,
-        selectTwo: null,
-        selectThree: null,
-        category: `Printable Pattern`, 
-        subCategory: `Face Mask`,
+        priceBtc: `API plug-in goes here`,
+        priceSale: null,
+        inStock: null,
+        selectSize: null,
+        selectColor: null,
+        selectMaterial: null,
+        category: `2d`, 
+        subCategory: `mask`,
      }, {
         id: `108`,
         name: `Light-Up Jacket`,
@@ -137,14 +137,14 @@ const products = [
         imgThree: `img/store-pic/jacket.png`,
         description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.`,
         priceReg: 500,
-        priceBtc:`API key plug-in`,
+        priceBtc: `API plug-in goes here`,
         priceSale: null,
-        inStock: `getInStockNumber`,
-        selectOne: `size`,
-        selectTwo: `color`,
-        selectThree: `material`,
-        category: `Apparel`, 
-        subCategory: `Outerwear`,
+        inStock: null,
+        selectSize: null,
+        selectColor: null,
+        selectMaterial: null,
+        category: `apparel`, 
+        subCategory: `outer`,
      }, {
         id: `109`,
         name: `Light-up Jacket Maker Kit`,
@@ -152,15 +152,175 @@ const products = [
         imgTwo: `img/store-pic/maker-kit-jacket-01.png`,
         imgThree: `img/store-pic/maker-kit-jacket-01.png`,
         description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.`,
-        priceReg: 200,
-        priceBtc:`API key plug-in`,
+        priceReg: 250,
+        priceBtc: `API plug-in goes here`,
         priceSale: null,
-        inStock: `getInStockNumber`,
-        selectOne: `size`,
-        selectTwo: `color`,
-        selectThree: `material`,
-        category: `Maker Kit`, 
-        subCategory: `Outerwear`,
+        inStock: null,
+        selectSize: null,
+        selectColor: null,
+        selectMaterial: null,
+        category: `maker`, 
+        subCategory: `outer`,
+      }, {
+        id: `110`,
+        name: `light-up jacket with custom aplique`,
+        imgOne: ``,
+        imgTwo: ``,
+        imgThree: ``,
+        description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.`,
+        priceReg: 560,
+        priceBtc: `API plug-in goes here`,
+        priceSale: null,
+        inStock: null,
+        selectSize: null,
+        selectColor: null,
+        selectMaterial: null,
+        category: `apparel`, 
+        subCategory: `outer`,
+      }, {
+        id: `111`,
+        name: `bomber jacket`,
+        imgOne: ``,
+        imgTwo: ``,
+        imgThree: ``,
+        description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.`,
+        priceReg: 200,
+        priceBtc: `API plug-in goes here`,
+        priceSale: null,
+        inStock: null,
+        selectSize: null,
+        selectColor: null,
+        selectMaterial: null,
+        category: `apparel`, 
+        subCategory: `outer`,
+      }, {
+        id: `112`,
+        name: `bomber jacket with custom aplique`,
+        imgOne: ``,
+        imgTwo: ``,
+        imgThree: ``,
+        description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.`,
+        priceReg: 260,
+        priceBtc: `API plug-in goes here`,
+        priceSale: null,
+        inStock: null,
+        selectSize: null,
+        selectColor: null,
+        selectMaterial: null,
+        category: `apparel`, 
+        subCategory: `outer`,
+      }, {
+        id: `113`,
+        name: `commuter backpack`,
+        imgOne: ``,
+        imgTwo: ``,
+        imgThree: ``,
+        description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.`,
+        priceReg: 300,
+        priceBtc: `API plug-in goes here`,
+        priceSale: null,
+        inStock: null,
+        selectSize: null,
+        selectColor: null,
+        selectMaterial: null,
+        category: `accessory`, 
+        subCategory: `bag`,
+      }, {
+        id: `114`,
+        name: `commuter backpack with battery pack`,
+        imgOne: ``,
+        imgTwo: ``,
+        imgThree: ``,
+        description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.`,
+        priceReg: 400,
+        priceBtc: `API plug-in goes here`,
+        priceSale: null,
+        inStock: null,
+        selectSize: null,
+        selectColor: null,
+        selectMaterial: null,
+        category: `accessory`, 
+        subCategory: `bag`,
+      }, {
+        id: `115`,
+        name: `digital nomad backpack`,
+        imgOne: ``,
+        imgTwo: ``,
+        imgThree: ``,
+        description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.`,
+        priceReg: 400,
+        priceBtc: `API plug-in goes here`,
+        priceSale: null,
+        inStock: null,
+        selectSize: null,
+        selectColor: null,
+        selectMaterial: null,
+        category: `accessory`, 
+        subCategory: `bag`,
+      }, {
+        id: `116`,
+        name: `digital nomad backpack with battery pack`,
+        imgOne: ``,
+        imgTwo: ``,
+        imgThree: ``,
+        description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.`,
+        priceReg: 500,
+        priceBtc: `API plug-in goes here`,
+        priceSale: null,
+        inStock: null,
+        selectSize: null,
+        selectColor: null,
+        selectMaterial: null,
+        category: `accessory`, 
+        subCategory: `bag`,
+      }, {
+        id: `117`,
+        name: `crystal horns 3D file`,
+        imgOne: ``,
+        imgTwo: ``,
+        imgThree: ``,
+        description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.`,
+        priceReg: 5,
+        priceBtc: `API plug-in goes here`,
+        priceSale: null,
+        inStock: null,
+        selectSize: null,
+        selectColor: null,
+        selectMaterial: null,
+        category: `3d`, 
+        subCategory: `dressup`,
+      }, {
+        id: `118`,
+        name: `sew-on circuits 3D file`,
+        imgOne: ``,
+        imgTwo: ``,
+        imgThree: ``,
+        description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.`,
+        priceReg: 1,
+        priceBtc: `API plug-in goes here`,
+        priceSale: null,
+        inStock: null,
+        selectSize: null,
+        selectColor: null,
+        selectMaterial: null,
+        category: `3d`, 
+        subCategory: `aplique`,
+      }, {
+        id: `119`,
+        name: `sew-on circuits aplique`,
+        imgOne: ``,
+        imgTwo: ``,
+        imgThree: ``,
+        description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.`,
+        priceReg: 30,
+        priceBtc: `API plug-in goes here`,
+        priceSale: null,
+        inStock: null,
+        selectSize: null,
+        selectColor: null,
+        selectMaterial: null,
+        category: `3dprint`, 
+        subCategory: `aplique`,
       }, 
 ];
 
@@ -178,47 +338,19 @@ function getProductAsHtmlString(products) {
 
     <header>
       <img src="${products.imgOne}">
+      <img src="${products.imgTwo}" class="img-thumb">
+      <img src="${products.imgThree}" class="img-thumb">
     </header>
 
     <h3>${products.name}</h3>
     <p>${products.description}</p>
-    <a href="#">see more</a>
 
-    <fieldset>
-        <legend>Sizes</legend>
-        <ul>
-            <li><label><input type="radio" name="size" value="sm"> <span>S-M</span></label></li>
-            <li><label><input type="radio" name="size" value="ml"> <span>M-L</span></label></li>
-            <li><label><input type="radio" name="size" value="lxl"> <span>L-XL</span></label></li>
-        </ul>
-    </fieldset>
+    <footer>
+      <data value="39">$ ${products.priceReg}</data>
 
-    <form>
-      <fieldset>
-        <legend>Colours</legend>
-        <ul>
-          <li><label><input type="radio" name="colour" value="r"> <span>Red</span></label></li>
-          <li><label><input type="radio" name="colour" value="w"> <span>White</span></label></li>
-          <li><label><input type="radio" name="colour" value="b"> <span>Blue</span></label></li>
-        </ul>
-      </fieldset>
+      <button type="button" class="button">Add to Cart</button>
 
-      <form>
-      <fieldset>
-        <legend>Materials</legend>
-        <ul>
-          <li><label><input type="radio" name="materials" value="f"> <span>felt</span></label></li>
-          <li><label><input type="radio" name="materials" value="l"> <span>Leather</span></label></li>
-          <li><label><input type="radio" name="materials" value="sc"> <span>SELFCLEAR acrylic fiber </span></label></li>
-        </ul>
-      </fieldset>
-
-      <footer>
-        <data value="39">$ ${products.priceReg}</data>
-
-        <button type="button" class="button">Add to Cart</button>
-
-      </footer>
+    </footer>
     </form>
   </article>
     
@@ -238,6 +370,32 @@ document.getElementById('products').innerHTML = strOfHtml;
 
 }
 
+// filtering products by category and subcategory 
+function filterByCat(products) {
+  // When a parameter gets sent to a filter, it gets stored as "this"
+  return products.category == this;
+}
+
+function filterBySubCat(products) {
+  // When a parameter gets sent to a filter, it gets stored as "this"
+  return products.subCategory == this;
+}
+
+function searchByCat(event) {
+  const searchTerm = event.target.value; // From the dropdown/select field
+  const arrCatCheck = products.filter(filterByCat, searchTerm)
+  renderProducts(arrCatCheck);
+}
+
+function searchBySubCat(event) {
+  const searchTerm = event.target.value; // From the dropdown/select field
+  const arrCatCheck = products.filter(filterBySubCat, searchTerm)
+  renderProducts(arrCatCheck);
+}
+
 /************* EXECUTABLE *************/
 
 renderProducts(products)
+
+document.getElementById('catSearch').addEventListener('change', searchByCat)
+document.getElementById('subCatSearch').addEventListener('change', searchBySubCat)

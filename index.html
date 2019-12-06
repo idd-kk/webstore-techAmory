@@ -63,76 +63,45 @@
 <!--Main-->
     <main class="whole-main">
 
-<!-- Navigation menu and toggle button (non-functional) -->
-      <nav aria-label="Primary">
-          <button type="button"><img src=""></button>
-          <ul>
-            <li><a href="#">Category</a>
-              <ul>
-                <li><a href="#">Subcategory</a></li>
-                <li><a href="#">Subcategory</a></li>
-                <li><a href="#">Subcategory</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Category</a></li>
-            <li><a href="#">Category</a></li>
-            <li><a href="#">Category</a></li>
-          </ul>
-        </nav>
-    
-<!-- Search for a product (non-functional) -->
-        <form>
-          <label>Search
-            <input type="search" name="find" id="find">
-          </label>
-          <button type="button"><span class="material-icons">search</span></button>
-        </form>
-
-        <h1>Shop</h1>
-    
-<!-- Filtering product form -->
-        <form>
-          <h2>Filters</h2>
-          <fieldset>
-            <label for="sort">Show</label>
-            <select name="sort" id="sort">
-              <option value="price-high">Price, highest to lowest</option>
-              <option value="price-low">Price, lowest to highest</option>
-              <option value="newest">Newest releases</option>
-            </select>
-          </fieldset>
-          <fieldset>
-            <legend>Colour</legend>
-            <ul>
-              <li><input type="checkbox" name="colour" value="black" id="black"> <label for="black">Black</label></li>
-              <li><input type="checkbox" name="colour" value="white" id="white"> <label for="white">White</label></li>
-              <li><input type="checkbox" name="colour" value="grey" id="grey"> <label for="grey">Grey</label></li>
-              <li><input type="checkbox" name="colour" value="red" id="red"> <label for="red">Red</label></li>
-              <li><input type="checkbox" name="colour" value="blue" id="blue"> <label for="blue">Blue</label></li>
-            </ul>
-          </fieldset>
-          <fieldset>
-            <legend>Sizes</legend>
-            <ol>
-              <li><input type="checkbox" name="size" value="xs" id="xs"> <label for="xs">XS</label></li>
-              <li><input type="checkbox" name="size" value="sm" id="sm"> <label for="sm">S</label></li>
-              <li><input type="checkbox" name="size" value="md" id="md"> <label for="md">M</label></li>
-              <li><input type="checkbox" name="size" value="lg" id="lg"> <label for="lg">L</label></li>
-              <li><input type="checkbox" name="size" value="xl" id="xl"> <label for="xl">XL</label></li>
-            </ol>
-          </fieldset>
-        
-        </form>
-        
 <!-- Products -->   
-        <section>
-          <h2>Results</h2>
-  
-          <div id="products">
-  
-          </div>
-  
-        </section>
+      <section>
+        <h2>Products</h2>
+<!-- drop down -->
+        <h4>Filter by:</h4>
+        <section class="drop-downs">
+            <form>
+              <div>
+                <label for="catSearch"></label>
+                <select name="categoryName" id="catSearch">
+                  <option value="all">Select a Category</option>
+                  <option value="3d" >3D File</option>
+                  <option value="3dprint" >3D Printed</option>
+                  <option value="2d">2D File</option>
+                  <option value="maker">Maker Kit</option>
+                  <option value="apparel">Apparel</option>
+                  <option value="accessory">Accessory</option>
+                </select>
+              </div>
+            </form>
+
+            <form>
+                <div>
+                  <label for="subCatSearch"></label>
+                  <select name="categoryName" id="subCatSearch">
+                    <option value="all">Select a Subcategory</option>
+                    <option value="aplique">Aplique</option>
+                    <option value="bag">Bag</option>
+                    <option value="mask">Face Mask</option>
+                    <option value="outer">Outerwear</option>
+                    <option value="dressup">Dress-up</option>
+                  </select>
+                </div>
+              </form>
+            </section>
+
+        <div class="products" id="products">
+        </div>
+      </section>
     
 <!--Pagination-->
       <nav aria-label="pagination" class="page">

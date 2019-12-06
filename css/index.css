@@ -156,6 +156,14 @@ data {
     padding: 1rem;
 }
 
+.img-thumb {
+    max-width: 5rem;
+}
+
+.product {
+    margin: 2rem 0;
+}
+
 /* pagination */
 
 .pagination {
